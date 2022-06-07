@@ -19,8 +19,8 @@ public class Wystawca {
     public String toString() {
         return "Wystawiający fakturę: " +
                 nazwa + '\n' +
-                ", NIP: " + NIP + "\n" +
-                ", Ul. '" + ulica + numer + "\n" +
+                "," + "NIP: " + NIP + ",\n" +
+                "Ul. '" + ulica + numer + ",\n" +
                 kodPocztowy + ", " +
                 poczta + '\n';
     }

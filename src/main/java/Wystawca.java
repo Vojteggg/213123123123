@@ -18,8 +18,8 @@ public class Wystawca {
     @Override
     public String toString() {
         return "Wystawiający fakturę: " +
-                nazwa + '\n' +
-                "," + "NIP: " + NIP + ",\n" +
+                nazwa + ",\n" +
+                "NIP: " + NIP + ",\n" +
                 "Ul. '" + ulica + numer + ",\n" +
                 kodPocztowy + ", " +
                 poczta + '\n';

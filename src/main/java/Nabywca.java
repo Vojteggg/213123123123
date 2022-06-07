@@ -1,4 +1,4 @@
-public class Wystawca {
+public class Nabywca {
     String nazwa;
     int NIP;
     String ulica;
@@ -6,7 +6,7 @@ public class Wystawca {
     String kodPocztowy;
     String poczta;
 
-    Wystawca (String nazwa,int NIP,String ulica,int numer,String kodPocztowy,String poczta){
+    Nabywca(String nazwa, int NIP, String ulica, int numer, String kodPocztowy, String poczta){
         this.nazwa=nazwa;
         this.NIP=NIP;
         this.ulica=ulica;
@@ -17,7 +17,7 @@ public class Wystawca {
 
     @Override
     public String toString() {
-        return "Wystawiający fakturę: " +
+        return "Nabywający fakturę: " +
                 nazwa + '\n' +
                 ", NIP: " + NIP + "\n" +
                 ", Ul. '" + ulica + numer + "\n" +

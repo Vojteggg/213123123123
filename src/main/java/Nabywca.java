@@ -19,8 +19,8 @@ public class Nabywca {
     public String toString() {
         return "Nabywający fakturę: " +
                 nazwa + '\n' +
-                ", NIP: " + NIP + "\n" +
-                ", Ul. '" + ulica + numer + "\n" +
+                "NIP: " + NIP + "\n" +
+                "Ul. '" + ulica + numer + "\n" +
                 kodPocztowy + ", " +
                 poczta + '\n';
     }

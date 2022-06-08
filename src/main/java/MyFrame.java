@@ -12,7 +12,5 @@ public class MyFrame extends JFrame {
         ImageIcon image = new ImageIcon("src/main/fvgen.png");
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(Color.white); //new Color(RGB albo cmyk whatever)
-        this.getContentPane().setFont(Font.getFont("Roboto"));
-        this.setForeground(Color.black);
     }
 }

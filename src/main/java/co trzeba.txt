@@ -1,0 +1,10 @@
+- nadawanie numeru faktury - klasa ktora w swojej metodzie zwraca nr faktury (np. dzien.miesiac.01 i tak i++)
+- sposób płatności
+- ew. termin płatności
+- całość do zapłaty
+- Słownie kwota
+- podpis osoby wystawiajacej,
+- podpis osoby odbierającej,
+
+
+https://www.baeldung.com/java-pdf-creation

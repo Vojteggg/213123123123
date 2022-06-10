@@ -9,6 +9,6 @@ public class sellingDate {
     }
     @Override
     public String toString() {
-        return day+"."+month+"."+year+"r.";
+        return day+"-"+month+"-"+year+"r.";
     }
 }

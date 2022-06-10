@@ -9,28 +9,26 @@ import java.util.Locale;
 public class ComparingDates {
     String dateOfSell;
     String dateOfIssue;
+    Boolean isAfter = false;
 
     public ComparingDates(String dateOfSell, String dateOfIssue) {
         try {
-            Date start = new SimpleDateFormat("d.M.yyyy", Locale.ENGLISH)
+            Date start = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH)
                     .parse(dateOfSell);
-            Date end = new SimpleDateFormat("d.M.yyyy", Locale.ENGLISH)
+            Date end = new SimpleDateFormat("dd-MM-yyyy", Locale.ENGLISH)
                     .parse(dateOfIssue);
 
             System.out.println(start);
             System.out.println(end);
 
-            while (start.compareTo(end) > 0) {
-                System.out.println("Powtórz dodawanie daty sprzedaży!");
-                break;
+            if (start.compareTo(end) > 0) {
+                isAfter = true;
             }
-        }
-        catch (ParseException e) {
+        } catch (ParseException e) {
             e.printStackTrace();
         }
+        System.out.println(isAfter);
     }
-
-
 }
 
 

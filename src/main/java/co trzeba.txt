@@ -8,7 +8,7 @@
 
 
 https://www.baeldung.com/java-pdf-creation
-
+https://www.codespeedy.com/generate-pdf-invoice-using-java/
 
 
 Faktura FV nr.32/05/2022

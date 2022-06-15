@@ -5,8 +5,8 @@ import java.util.Locale;
 
 
 public class ComparingDates {
-    String dateOfSell;
-    String dateOfIssue;
+    private String dateOfSell;
+    private String dateOfIssue;
     Boolean isAfter = false;
 
     public ComparingDates(String dateOfSell, String dateOfIssue) {

@@ -1,7 +1,7 @@
 public class sellingDate {
-    Integer day;
-    Integer month;
-    int year;
+    private int day;
+    private int month;
+    private int year;
     sellingDate(Integer day, Integer month, int year){
         this.day=day;
         this.year=year;

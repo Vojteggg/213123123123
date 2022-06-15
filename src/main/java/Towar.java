@@ -1,8 +1,8 @@
-public class Towar {
-    public String nazwa;
-    public int VAT;
-    public Double brutto;
-    public String jm;
+public class Towar extends TowaryA{
+    private String nazwa;
+    private int VAT;
+    protected Double brutto;
+    private String jm;
 
 
     Towar(String nazwa,int VAT,Double brutto, String jm){

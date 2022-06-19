@@ -1,7 +1,9 @@
 import java.util.Scanner;
 
 public class DaneFirmy {
-    private String nazwa;
+    Scanner sc = new Scanner(System.in);
+    private String trash;
+    public String nazwa;
     private long NIP;
     private String ulica;
     private int numer;
@@ -15,6 +17,31 @@ public class DaneFirmy {
         this.numer = numer;
         this.kodPocztowy = kodPocztowy;
         this.poczta = poczta;
+    }
+
+    public DaneFirmy() {
+
+    }
+
+    public DaneFirmy wczytywanie (){
+        System.out.println("DANE FIRMY WYSTAWIAJĄCEJ FAKTURĘ\n");
+        System.out.println("Podaj nazwę firmy : ");
+        String nazwaFirmyW = sc.nextLine();
+        System.out.println("Podaj NIP: ");
+        long nipW = sc.nextLong();
+        trash = sc.nextLine();
+        System.out.println("Podaj ulicę: ");
+        String ulicaW = sc.nextLine();
+        System.out.println("Podaj numer budynku: ");
+        int numerW = sc.nextInt();
+        trash = sc.nextLine();
+        System.out.println("Podaj kod pocztowy: ");
+        String kodPocztowyW = sc.nextLine();
+        System.out.println("Podaj Miasto: ");
+        String miastoW = sc.nextLine();
+//        DaneFirmy wystawiajacy = new DaneFirmy(nazwaFirmyW, nipW, ulicaW, numerW, kodPocztowyW, miastoW);
+//        System.out.println(wystawiajacy);
+        return new DaneFirmy(nazwaFirmyW, nipW, ulicaW, numerW, kodPocztowyW, miastoW);
     }
 
 

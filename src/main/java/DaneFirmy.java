@@ -4,13 +4,13 @@ public class DaneFirmy {
     Scanner sc = new Scanner(System.in);
     private String trash;
     public String nazwa;
-    private long NIP;
-    private String ulica;
-    private int numer;
-    private String kodPocztowy;
-    private String poczta;
+    public long NIP;
+    public String ulica;
+    public int numer;
+    public String kodPocztowy;
+    public String poczta;
 
-    DaneFirmy (String nazwa, long NIP, String ulica, int numer, String kodPocztowy, String poczta) {
+    DaneFirmy(String nazwa, long NIP, String ulica, int numer, String kodPocztowy, String poczta) {
         this.nazwa = nazwa;
         this.NIP = NIP;
         this.ulica = ulica;
@@ -23,7 +23,7 @@ public class DaneFirmy {
 
     }
 
-    public DaneFirmy wczytywanie (){
+    public DaneFirmy wczytywanie() {
         System.out.println("DANE FIRMY WYSTAWIAJĄCEJ FAKTURĘ\n");
         System.out.println("Podaj nazwę firmy : ");
         String nazwaFirmyW = sc.nextLine();
@@ -47,11 +47,10 @@ public class DaneFirmy {
 
     @Override
     public String toString() {
-        return "Dane firmy: " +
-                nazwa + "\n" +
+        return nazwa + "\n" +
                 "NIP: " + NIP + "\n" +
                 "Ul." + ulica + " " + numer + "\n" +
                 kodPocztowy + ", " +
-                poczta + '\n';
+                poczta + "\n";
     }
 }

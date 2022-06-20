@@ -4,36 +4,23 @@ import java.util.Locale;
 
 public class NumerFaktury {
 
-    private int miesiac;
-    private int rok;
-    private int numer;
 
-
-    private static String main(String[] args) {
-        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("mm-yyyy", Locale.ENGLISH);
+    private String data() {
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM-YYYY", Locale.ENGLISH);
         LocalDateTime now = LocalDateTime.now();
-        return dtf.format(now);
+        String Date = dtf.format(now);
+        return Date;
     }
 
-
-    public void wygenerujNumer(){
-        int numer = 0;
-
-        numer++;
-        System.out.println(numer);
+    NumerFaktury() {
     }
 
-
-
-
-    NumerFaktury(Integer numer, Integer miesiac, Integer rok) {
-
-        this.numer = numer;
-        this.miesiac = miesiac;
-        this.rok = rok;
+    public String numerFaktyczny(){
+        String data = data();
+        int numerfv = 0;
+        numerfv++;
+        String numerek = numerfv + "-" + data;
+        return numerek;
     }
 
-    public String toString() {
-        return numer + "/" + miesiac + "-" + rok;
-    }
 }
